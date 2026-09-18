@@ -5,3 +5,11 @@ Object.assign(Y,{"⚡ Get Support":"⚡ באקומט הילף","⚙ Professional
 const EN_TITLE=document.title,TITLES={"index.html":"The 8040 Tech - איי-טי לעזונגען און הילף","services.html":"סערוויסעס - The 8040 Tech","about.html":"וועגן אונדז - The 8040 Tech","process.html":"אונדזער ארבעטס-גאנג - The 8040 Tech","support.html":"הילף - The 8040 Tech","contact.html":"קאנטאקט - The 8040 Tech"};
 function setLanguage(lang){const yi=lang==='yi',h=document.documentElement;h.lang=yi?'yi':'en';h.dir=yi?'rtl':'ltr';const w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode(n){return n.parentElement&&!['SCRIPT','STYLE'].includes(n.parentElement.tagName)&&n.nodeValue.trim()?NodeFilter.FILTER_ACCEPT:NodeFilter.FILTER_REJECT}}),a=[];while(w.nextNode())a.push(w.currentNode);a.forEach(n=>{if(!n.__en)n.__en=n.nodeValue;const raw=n.__en,k=raw.trim();n.nodeValue=yi&&Y[k]?raw.replace(k,Y[k]):raw});document.title=yi?(TITLES[location.pathname.split('/').pop()||'index.html']||EN_TITLE):EN_TITLE;document.querySelectorAll('.lang-btn').forEach(b=>{const on=b.dataset.lang===lang;b.classList.toggle('active',on);b.setAttribute('aria-pressed',String(on))});localStorage.setItem('8040-lang',lang)}
 document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.lang-btn').forEach(b=>b.addEventListener('click',()=>setLanguage(b.dataset.lang)));setLanguage(localStorage.getItem('8040-lang')==='yi'?'yi':'en')});
+// Privacy-friendly aggregate analytics (no cookies).
+(()=>{
+  const s=document.createElement('script');
+  s.dataset.goatcounter='https://the8040tech.goatcounter.com/count';
+  s.async=true;
+  s.src='https://gc.zgo.at/count.js';
+  document.head.appendChild(s);
+})();
