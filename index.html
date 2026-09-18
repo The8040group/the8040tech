@@ -1,115 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The 8040 Tech | IT Solutions</title>
-  <meta name="description" content="The 8040 Tech provides reliable IT services, technical support, and technology solutions for businesses and individuals." />
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#050816">
+  <title>The 8040 Tech | Modern IT Solutions</title>
+  <meta name="description" content="The 8040 Tech provides reliable IT support, systems management, and practical technology solutions for modern organizations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#07111f;--muted:#627087;--line:#dce5ef;--white:#fff;--cyan:#36d9ff;--blue:#3772ff;--violet:#7957ff;--navy:#050816;--panel:#0b1328;--max:1180px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Manrope,system-ui,sans-serif;color:var(--ink);background:#f6f9fc;line-height:1.6}a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}.eyebrow{display:inline-flex;align-items:center;gap:9px;text-transform:uppercase;letter-spacing:.16em;font-weight:800;font-size:.72rem;color:#1779ba}.eyebrow:before{content:"";width:22px;height:2px;background:var(--cyan);border-radius:10px}.top{position:fixed;z-index:20;inset:0 0 auto;background:rgba(5,8,22,.78);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.08)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;color:white}.brand{display:flex;align-items:center;gap:12px;font-family:"Space Grotesk";font-weight:700;letter-spacing:-.02em}.mark{width:37px;height:37px;border-radius:11px;display:grid;place-items:center;background:linear-gradient(135deg,var(--cyan),var(--blue) 55%,var(--violet));box-shadow:0 8px 24px rgba(55,114,255,.4);font-size:.82rem;color:#03101b}.links{display:flex;align-items:center;gap:30px;font-weight:600;font-size:.91rem}.links a{opacity:.8}.links a:hover{opacity:1}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:12px;font-weight:800;transition:.25s}.nav-cta{padding:11px 18px;background:white;color:var(--navy)}.menu{display:none;border:0;background:transparent;color:white;font-size:1.6rem}.hero{min-height:780px;padding:150px 0 85px;color:white;position:relative;overflow:hidden;background:radial-gradient(circle at 79% 22%,rgba(55,114,255,.35),transparent 27%),radial-gradient(circle at 12% 70%,rgba(121,87,255,.22),transparent 28%),var(--navy)}.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:64px 64px;mask-image:linear-gradient(to bottom,#000,transparent)}.orb{position:absolute;width:360px;height:360px;border-radius:50%;right:-80px;top:140px;border:1px solid rgba(54,217,255,.26);box-shadow:0 0 100px rgba(54,217,255,.11),inset 0 0 70px rgba(55,114,255,.12)}.orb:before,.orb:after{content:"";position:absolute;border-radius:50%;inset:48px;border:1px solid rgba(255,255,255,.13)}.orb:after{inset:105px;background:radial-gradient(circle at 35% 35%,var(--cyan),var(--blue) 42%,#131c59 70%);box-shadow:0 0 65px rgba(55,114,255,.65);border:0}.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:center}.hero .eyebrow{color:#80e9ff}.hero h1{font:700 clamp(3.2rem,6.5vw,6.3rem)/.98 "Space Grotesk";letter-spacing:-.055em;margin:24px 0}.gradient{background:linear-gradient(90deg,#fff 15%,#80e9ff 60%,#9b87ff);-webkit-background-clip:text;color:transparent}.hero p{max-width:680px;color:#b8c4d8;font-size:1.15rem;margin:0 0 34px}.actions{display:flex;gap:14px;flex-wrap:wrap}.btn{padding:15px 23px}.btn-primary{background:linear-gradient(135deg,var(--cyan),#4c82ff);color:#05101e;box-shadow:0 12px 35px rgba(54,217,255,.2)}.btn-ghost{border:1px solid rgba(255,255,255,.2);color:white;background:rgba(255,255,255,.05)}.btn:hover{transform:translateY(-2px)}.hero-card{position:relative;margin-top:70px;margin-left:auto;width:min(400px,100%);padding:28px;border:1px solid rgba(255,255,255,.13);background:rgba(12,20,42,.7);backdrop-filter:blur(16px);border-radius:24px;box-shadow:0 30px 80px rgba(0,0,0,.3)}.status{display:flex;align-items:center;justify-content:space-between;font-size:.8rem;color:#9ba8bd}.status span:first-child{display:flex;align-items:center;gap:8px}.dot{width:8px;height:8px;border-radius:50%;background:#45f0b0;box-shadow:0 0 12px #45f0b0}.screen{margin-top:20px;border-radius:14px;padding:20px;background:#070c19;border:1px solid #1b2945}.line{height:7px;border-radius:5px;background:#1b2945;margin:11px 0}.line:nth-child(2){width:73%;background:linear-gradient(90deg,var(--cyan),var(--blue))}.line:nth-child(3){width:88%}.line:nth-child(4){width:56%}.trusted{background:#0a1021;color:#8795aa;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06)}.trusted-inner{padding:24px 0;display:flex;align-items:center;justify-content:center;gap:12px;text-align:center;font-weight:600}.trusted b{color:white}.section{padding:110px 0}.section-head{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:48px}.section h2{font:700 clamp(2.35rem,5vw,4rem)/1.05 "Space Grotesk";letter-spacing:-.045em;margin:15px 0 0;max-width:720px}.section-head p{max-width:420px;color:var(--muted)}.services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.service{background:white;border:1px solid var(--line);border-radius:20px;padding:32px;min-height:305px;position:relative;overflow:hidden;transition:.3s;box-shadow:0 15px 45px rgba(20,39,70,.04)}.service:hover{transform:translateY(-6px);box-shadow:0 24px 60px rgba(20,39,70,.1);border-color:#b9d9f4}.icon{width:52px;height:52px;border-radius:15px;display:grid;place-items:center;background:linear-gradient(135deg,#e8faff,#edf1ff);color:#1c65cf;font-size:1.3rem;font-weight:800}.service h3{font:600 1.35rem "Space Grotesk";margin:25px 0 12px}.service p{color:var(--muted);margin:0}.service .num{position:absolute;right:22px;top:20px;color:#cbd6e4;font-size:.72rem;font-weight:800}.about{background:var(--navy);color:white;overflow:hidden}.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:90px;align-items:center}.visual{height:460px;border-radius:28px;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 40%,rgba(54,217,255,.28),transparent 25%),linear-gradient(145deg,#101d3a,#070b18);border:1px solid rgba(255,255,255,.1)}.visual:before{content:"";position:absolute;inset:11%;border:1px solid rgba(54,217,255,.35);border-radius:50%;box-shadow:0 0 70px rgba(55,114,255,.18)}.visual:after{content:"8040";position:absolute;inset:0;display:grid;place-items:center;font:700 4.5rem "Space Grotesk";letter-spacing:-.08em;background:linear-gradient(135deg,#fff,var(--cyan),#806fff);-webkit-background-clip:text;color:transparent}.about .eyebrow{color:#78e6ff}.about h2{margin-bottom:24px}.about p{color:#acb9cd}.principles{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px}.principle{padding:18px;border-radius:14px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.035)}.principle b{display:block;color:white;margin-bottom:4px}.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}.step{padding:26px;border-left:1px solid var(--line)}.step:first-child{border-left:0}.step span{font:700 2.7rem "Space Grotesk";color:#d9e6f3}.step h3{font-family:"Space Grotesk";margin:12px 0 8px}.step p{color:var(--muted);font-size:.92rem}.contact-wrap{border-radius:30px;overflow:hidden;display:grid;grid-template-columns:.9fr 1.1fr;box-shadow:0 30px 90px rgba(9,27,57,.14)}.contact-info{padding:54px;background:linear-gradient(145deg,#101a38,#060a17);color:white}.contact-info h2{font-size:2.7rem}.contact-info p{color:#aab8cc}.details{margin-top:38px;display:grid;gap:22px}.detail{display:flex;gap:15px;align-items:flex-start}.detail i{width:38px;height:38px;display:grid;place-items:center;background:rgba(54,217,255,.12);border-radius:10px;color:var(--cyan);font-style:normal}.detail small{display:block;color:#8391a7;text-transform:uppercase;letter-spacing:.1em;font-weight:700}.contact-form{padding:54px;background:white}.contact-form h3{font:600 1.65rem "Space Grotesk";margin:0 0 26px}.field{margin-bottom:18px}.field label{display:block;font-size:.82rem;font-weight:800;margin-bottom:7px}.field input,.field textarea{width:100%;border:1px solid #d8e1ec;border-radius:12px;padding:13px 15px;outline:none;background:#fbfdff}.field input:focus,.field textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(55,114,255,.1)}textarea{min-height:120px;resize:vertical}.submit{border:0;cursor:pointer;width:100%;background:var(--navy);color:white}.fine{font-size:.76rem;color:#8290a5;margin-top:12px;text-align:center}.footer{background:#050816;color:#91a0b6;padding:35px 0}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px}.footer .brand{color:white}.footer-links{display:flex;gap:22px;font-size:.85rem}.reveal{opacity:0;transform:translateY(18px);transition:.7s}.reveal.show{opacity:1;transform:none}
+    @media(max-width:900px){.links{display:none}.menu{display:block}.links.open{display:flex;position:absolute;left:20px;right:20px;top:67px;padding:20px;flex-direction:column;align-items:stretch;background:#0b1328;border:1px solid rgba(255,255,255,.1);border-radius:16px}.hero-grid,.about-grid,.contact-wrap{grid-template-columns:1fr}.hero{min-height:auto}.hero-card{margin:25px 0 0}.orb{opacity:.5}.services{grid-template-columns:1fr 1fr}.about-grid{gap:50px}.process-grid{grid-template-columns:1fr 1fr}.step:nth-child(3){border-left:0;border-top:1px solid var(--line)}.step:nth-child(4){border-top:1px solid var(--line)}}
+    @media(max-width:620px){.wrap{width:min(100% - 28px,var(--max))}.nav{height:68px}.brand span:last-child{font-size:.95rem}.hero{padding:120px 0 68px}.hero h1{font-size:3.3rem}.hero p{font-size:1rem}.actions .btn{width:100%}.section{padding:78px 0}.section-head{display:block}.services,.principles,.process-grid{grid-template-columns:1fr}.service{min-height:0}.visual{height:340px}.step,.step:first-child,.step:nth-child(3),.step:nth-child(4){border-left:0;border-top:1px solid var(--line)}.step:first-child{border-top:0}.contact-info,.contact-form{padding:34px 24px}.contact-info h2{font-size:2.25rem}.footer-inner{flex-direction:column;text-align:center}.footer-links{flex-wrap:wrap;justify-content:center}}
+  </style>
 </head>
-<body class="bg-slate-50 text-slate-800">
-
-  <!-- Header -->
-  <header class="bg-slate-900 text-white">
-    <div class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
-      <h1 class="text-2xl font-bold tracking-wide">The 8040 Tech</h1>
-      <nav class="space-x-6 hidden md:block">
-        <a href="#services" class="hover:text-slate-300">Services</a>
-        <a href="#about" class="hover:text-slate-300">About</a>
-        <a href="#contact" class="hover:text-slate-300">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="bg-gradient-to-r from-slate-800 to-slate-700 text-white">
-    <div class="max-w-7xl mx-auto px-6 py-20 text-center">
-      <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Reliable IT Solutions You Can Trust</h2>
-      <p class="text-lg md:text-xl text-slate-200 max-w-3xl mx-auto mb-8">
-        The 8040 Tech delivers professional IT support, system maintenance, and technology solutions designed to keep your business running smoothly.
-      </p>
-      <a href="#contact" class="inline-block bg-white text-slate-900 font-semibold px-8 py-3 rounded-xl shadow hover:bg-slate-200 transition">
-        Get Support
-      </a>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <section id="services" class="py-20">
-    <div class="max-w-7xl mx-auto px-6">
-      <h3 class="text-3xl font-bold text-center mb-12">Our Services</h3>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white rounded-2xl shadow p-8">
-          <h4 class="text-xl font-semibold mb-3">IT Support & Troubleshooting</h4>
-          <p class="text-slate-600">Fast and dependable technical support for hardware, software, and network issues.</p>
-        </div>
-        <div class="bg-white rounded-2xl shadow p-8">
-          <h4 class="text-xl font-semibold mb-3">Network & Systems Management</h4>
-          <p class="text-slate-600">Setup, monitoring, and maintenance of secure and efficient IT systems.</p>
-        </div>
-        <div class="bg-white rounded-2xl shadow p-8">
-          <h4 class="text-xl font-semibold mb-3">Consulting & Solutions</h4>
-          <p class="text-slate-600">Technology guidance and solutions tailored to your business needs.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="bg-slate-100 py-20">
-    <div class="max-w-5xl mx-auto px-6 text-center">
-      <h3 class="text-3xl font-bold mb-6">About The 8040 Tech</h3>
-      <p class="text-slate-700 text-lg">
-        The 8040 Tech is committed to providing dependable and professional IT services. We focus on clear communication, fast response times, and practical solutions that help our clients stay productive and secure.
-      </p>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="py-20">
-    <div class="max-w-6xl mx-auto px-6">
-      <h3 class="text-3xl font-bold text-center mb-12">Contact Us</h3>
-      <div class="grid md:grid-cols-2 gap-12">
-        <div>
-          <h4 class="text-xl font-semibold mb-4">Get in Touch</h4>
-          <p class="mb-2"><strong>Email:</strong> <a href="mailto:technician@usa.com" class="text-slate-900 underline">technician@usa.com</a></p>
-          <p class="mb-2"><strong>Phone:</strong> <a href="tel:18455792963" class="text-slate-900 underline">845-579-2963</a></p>
-          <p class="mb-2"><strong>Business Hours:</strong></p>
-          <p class="text-slate-700">10:00 AM – 6:00 PM EST<br/>Sunday – Thursday</p>
-          <p class="mt-4 text-slate-700"><strong>Email Support:</strong> Available 24/6</p>
-        </div>
-        <div class="bg-white rounded-2xl shadow p-8">
-          <h4 class="text-xl font-semibold mb-4">Send a Message</h4>
-          <form id="contact-form" class="space-y-4">
-            <input type="text" name="name" placeholder="Your Name" required class="w-full border rounded-xl px-4 py-3" />
-            <input type="email" name="email" placeholder="Your Email" required class="w-full border rounded-xl px-4 py-3" />
-            <textarea name="message" placeholder="How can we help you?" rows="4" required class="w-full border rounded-xl px-4 py-3"></textarea>
-            <button type="submit" class="w-full bg-slate-900 text-white font-semibold py-3 rounded-xl hover:bg-slate-800 transition">Submit</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-slate-900 text-slate-300">
-    <div class="max-w-7xl mx-auto px-6 py-6 text-center">
-      <p>&copy; 2026 The 8040 Tech. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById('contact-form').addEventListener('submit', function (event) {
-      event.preventDefault();
-      const data = new FormData(this);
-      const subject = encodeURIComponent('Support request from ' + data.get('name'));
-      const body = encodeURIComponent(
-        'Name: ' + data.get('name') + '\n' +
-        'Email: ' + data.get('email') + '\n\n' +
-        data.get('message')
-      );
-      window.location.href = 'mailto:technician@usa.com?subject=' + subject + '&body=' + body;
-    });
-  </script>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="#top" aria-label="The 8040 Tech home"><span class="mark">80</span><span>The 8040 Tech</span></a><button class="menu" aria-label="Open navigation" aria-expanded="false">☰</button><nav class="links"><a href="#services">Solutions</a><a href="#about">About</a><a href="#process">Approach</a><a class="nav-cta" href="#contact">Start a conversation</a></nav></div></header>
+<main id="top">
+<section class="hero"><div class="orb" aria-hidden="true"></div><div class="wrap hero-grid"><div><span class="eyebrow">Built for what comes next</span><h1>Technology that moves <span class="gradient">business forward.</span></h1><p>The 8040 Tech helps organizations run with confidence through dependable IT support, system management, and practical technology guidance.</p><div class="actions"><a class="btn btn-primary" href="#contact">Talk to an IT specialist →</a><a class="btn btn-ghost" href="#services">Explore solutions</a></div></div><aside class="hero-card"><div class="status"><span><i class="dot"></i> Systems overview</span><span>Operational</span></div><div class="screen"><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div></div></aside></div></section>
+<div class="trusted"><div class="wrap trusted-inner"><span>Clear guidance.</span><b>Dependable support.</b><span>Technology built around your needs.</span></div></div>
+<section class="section" id="services"><div class="wrap"><div class="section-head reveal"><div><span class="eyebrow">What we do</span><h2>IT solutions designed around real business needs.</h2></div><p>From everyday technical issues to long-term systems planning, we bring a practical, thoughtful approach to your technology.</p></div><div class="services"><article class="service reveal"><span class="num">01</span><div class="icon">↗</div><h3>IT Support & Troubleshooting</h3><p>Dependable help for hardware, software, and network issues, with clear communication at every step.</p></article><article class="service reveal"><span class="num">02</span><div class="icon">⌁</div><h3>Network & Systems Management</h3><p>Setup, monitoring, and maintenance focused on keeping your technology secure, efficient, and ready for work.</p></article><article class="service reveal"><span class="num">03</span><div class="icon">◇</div><h3>Technology Consulting</h3><p>Practical guidance and tailored solutions that align technology decisions with your organization’s priorities.</p></article></div></div></section>
+<section class="section about" id="about"><div class="wrap about-grid"><div class="visual reveal" aria-label="The 8040 Tech digital graphic"></div><div class="reveal"><span class="eyebrow">About The 8040 Tech</span><h2>Clarity and confidence in every technology decision.</h2><p>Technology should make work easier, not create more uncertainty. The 8040 Tech focuses on dependable service, clear communication, and practical solutions that help clients stay productive and secure.</p><div class="principles"><div class="principle"><b>Business-minded</b><span>Technology decisions guided by your priorities.</span></div><div class="principle"><b>People-first</b><span>Clear answers without unnecessary complexity.</span></div><div class="principle"><b>Dependable</b><span>Professional support when it matters.</span></div><div class="principle"><b>Forward-looking</b><span>Systems designed with tomorrow in mind.</span></div></div></div></div></section>
+<section class="section" id="process"><div class="wrap"><div class="section-head reveal"><div><span class="eyebrow">Our approach</span><h2>A straightforward path from issue to outcome.</h2></div></div><div class="process-grid reveal"><div class="step"><span>01</span><h3>Listen</h3><p>We start with your goals, current setup, and the problems getting in the way.</p></div><div class="step"><span>02</span><h3>Assess</h3><p>We identify the practical options and explain what makes sense.</p></div><div class="step"><span>03</span><h3>Implement</h3><p>We put the right solution in place with care and clear communication.</p></div><div class="step"><span>04</span><h3>Support</h3><p>We help keep your technology working as your needs evolve.</p></div></div></div></section>
+<section class="section" id="contact"><div class="wrap contact-wrap reveal"><div class="contact-info"><span class="eyebrow">Let’s talk</span><h2>Ready for better IT?</h2><p>Tell us what you’re working through. We’ll help you find a practical next step.</p><div class="details"><a class="detail" href="mailto:technician@usa.com"><i>✉</i><span><small>Email</small>technician@usa.com</span></a><a class="detail" href="tel:18455792963"><i>☎</i><span><small>Phone</small>845-579-2963</span></a><div class="detail"><i>◷</i><span><small>Business hours</small>10:00 AM – 6:00 PM EST<br>Sunday – Thursday<br>Email support available 24/6</span></div></div></div><div class="contact-form"><h3>Start a conversation</h3><form id="contact-form"><div class="field"><label for="name">Name</label><input id="name" name="name" autocomplete="name" required placeholder="Your name"></div><div class="field"><label for="email">Work email</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="you@company.com"></div><div class="field"><label for="message">How can we help?</label><textarea id="message" name="message" required placeholder="Tell us about your IT needs"></textarea></div><button class="btn submit" type="submit">Send message →</button><div class="fine">This opens your email app with your message ready to send.</div></form></div></div></section>
+</main>
+<footer class="footer"><div class="wrap footer-inner"><a class="brand" href="#top"><span class="mark">80</span><span>The 8040 Tech</span></a><div>© 2026 The 8040 Tech. All rights reserved.</div><div class="footer-links"><a href="#services">Solutions</a><a href="#about">About</a><a href="#contact">Contact</a></div></div></footer>
+<script>
+const menu=document.querySelector('.menu'),links=document.querySelector('.links');menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',open);menu.textContent=open?'×':'☰'});links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+document.getElementById('contact-form').addEventListener('submit',function(e){e.preventDefault();const d=new FormData(this);const subject=encodeURIComponent('IT inquiry from '+d.get('name'));const body=encodeURIComponent('Name: '+d.get('name')+'\nEmail: '+d.get('email')+'\n\nMessage:\n'+d.get('message'));location.href='mailto:technician@usa.com?subject='+subject+'&body='+body});
+</script>
 </body>
 </html>
