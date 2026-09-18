@@ -522,6 +522,7 @@ footer { background:var(--surface); border-top:1px solid var(--border); padding:
 .page-hero-sub { font-size:1.05rem; color:var(--text2); max-width:560px; margin:0 auto; line-height:1.75; }
 @media(max-width:900px){ .page-hero { padding:130px 24px 60px; } }
 </style>
+<link rel="stylesheet" href="lang.css">
 </head>
 <body>
 <div class="orb orb1"></div><div class="orb orb2"></div><div class="orb orb3"></div>
@@ -543,7 +544,7 @@ footer { background:var(--surface); border-top:1px solid var(--border); padding:
     <li><a href="support.html">Support</a></li>
     <li><a href="contact.html" class="active">Contact</a></li>
   </ul>
-  <div class="nav-right">
+  <div class="nav-right"><div class="lang-switch" role="group" aria-label="Language"><button type="button" class="lang-btn active" data-lang="en">EN</button><button type="button" class="lang-btn" data-lang="yi">אידיש</button></div>
     <label class="theme-toggle" aria-label="Toggle dark mode"><span class="t-icon sun">☀️</span><div class="toggle-track" id="toggleTrack"><div class="toggle-knob"></div></div><span class="t-icon moon">🌙</span></label>
     <a href="contact.html" class="nav-cta">⚡ Get Support</a>
     <button class="nav-burger" id="navBurger" aria-label="Menu">☰</button>
@@ -697,5 +698,6 @@ document.addEventListener('DOMContentLoaded',()=>{
   });
 });
 </script>
+<script src="lang.js"></script>
 </body>
 </html>
